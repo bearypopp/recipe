@@ -1,0 +1,559 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+/*Kylie Koba*/
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400');
+
+
+/*-------------------- CSS REST ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+    font-family: "Bebas Neue", "Montserrat";
+
+    --Black: #0D0D0D;
+    --Seafoam: #7ABFBF;
+    --Light_green: #a1c181;
+    --Light_blue: rgba(122, 191, 191, .5);
+    --Orange: #EB5428;
+    --White: #F2F2F2;
+
+
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+/*background not light_blue*/
+html {
+    background-color: var(--Light_blue);
+}
+
+body {
+    min-width: 414px;
+    margin: 0 30px;
+    background-color: var(--White);
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Bebas Neue";
+    color: var(--Black);
+    text-transform: uppercase;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+/*LOGO LOCATION ISN'T WORKING*/
+.logo {
+    background-color: #EB5428;
+    box-shadow: 0px 3px 3px #bbb;
+
+}
+
+.logo svg {
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.otherLinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#save a {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-decoration: none;
+    color: var(--Orange);
+    font-size: 20px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+#share a {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-decoration: none;
+    color: var(--Orange);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#print a {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-decoration: none;
+    color: var(--Orange);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#jump a {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+    color: var(--Orange);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#tacoImg img {
+    max-width: 100%;
+}
+
+#preblurb {
+    padding: 10px;
+}
+
+#preblurb p {
+    padding: 5px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.recipe h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+#cookingDetails {
+    padding: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+table th {
+    font-weight: bold;
+    padding-right: 15px;
+    text-align: left;
+}
+
+#ingredients ul {
+    padding: 30px;
+}
+
+#ingredients li {
+    font-family: Montserrat;
+    list-style-type: square;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#Directions ol {
+    padding: 20px;
+}
+
+#Directions li {
+    padding: 10px;
+    font-family: Montserrat;
+    line-height: 1.5;
+    font-weight: 400;
+    list-style-type: decimal;
+    font-size: 16px;
+}
+
+aside {
+    background-color: #7ABFBF;
+
+}
+
+aside section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+aside h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+aside a {
+    display: block;
+    padding: 10px;
+    color: #0D0D0D;
+    text-decoration: none;
+}
+
+aside img {
+    max-width: 75%;
+}
+
+aside .rating {
+    display: flex;
+    flex-direction: column;
+}
+
+aside h3 {
+    font-family: Bebas Neue;
+    font-size: 25px;
+}
+
+aside p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    padding-bottom: 2px;
+}
+
+aside h4 {
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+}
+
+#first svg:nth-child(-n + 4) {
+    fill: #EB5428;
+}
+
+#second svg:nth-child(-n + 5) {
+    fill: #EB5428;
+}
+
+#third svg:nth-child(-n + 4) {
+    fill: #EB5428;
+}
+
+#fourth svg:nth-child(-n + 4) {
+    fill: #EB5428;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+
+}
+
+nav ul {
+    grid-area: hamburger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+
+nav li img {
+    display: none;
+}
+
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--Orange);
+}
+
+nav #sign-in{
+    grid-area: nav;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: absolute;
+    top: 0;
+    left: 191.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+#sign-in a{
+    color: var(--Black);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav #menu{
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    left: 30px;
+}
+
+nav span {
+    display: block;
+    position: relative;
+}
+
+nav label svg {
+    padding-top: 10px;
+    display: block;
+}
+
+label span:before,
+label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+nav input {
+    display: none;
+}
+
+nav input:checked~ul {
+    max-height: 550px;
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+
+
+.search {
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    display: flex;
+    justify-content: center;
+    border-color: var(--Orange);
+
+}
+
+.search input {
+    height: 50px;
+    border: 3px solid var(--Orange);
+}
+
+.search button {
+    border: 3px solid var(--Orange);
+
+
+}
+
+#button svg {
+    background-color: var(--White);
+
+}
+
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#FB a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Orange);
+    font-size: 20px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+#IG a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Orange);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#YT a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Orange);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#TT a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Orange);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#CR img {
+    max-width: 50%;
+    padding-bottom: 30px;
+}
+
+#CR p {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+}
